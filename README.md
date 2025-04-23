@@ -1,3 +1,2 @@
-<head>Core Java Tutorial </head>
-<br>
+# Core Java Tutorial 
 Author - Ashish D D
