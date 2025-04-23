@@ -1,0 +1,62 @@
+class Student
+{
+	String name = "Arjun";
+	int age = 23;
+	int marks = 79;
+	void study(){
+		System.out.println(name + " is studying.");
+	}
+}
+
+class Employee
+{
+	String name = "Subhash";
+	int age = 54;
+	int salary = 100000;
+	void works(){
+		System.out.println(name + " is working.");
+	}
+}
+
+
+
+class  Demo1
+{
+	public static void main(String[] args) 
+	{
+		Student s1;
+		s1 = new Student();
+		
+		Student s2;
+		s2 = new Student();
+		
+		Employee e1;
+		e1 = new Employee();
+		
+		System.out.println(s1.name);
+		System.out.println(s1.age);
+		System.out.println(s1.marks);
+		s1.study();
+		
+		System.out.println(s2.name);
+		System.out.println(s2.age);
+		System.out.println(s2.marks);
+		s2.study();
+		
+		System.out.println(e1.name);
+		System.out.println(e1.age);
+		System.out.println(e1.salary);
+		e1.works();
+		
+		s2.name = "Geetha";
+		s2.age = 28;
+		s2.marks = 95;
+		
+		System.out.println(s2.name);
+		System.out.println(s2.age);
+		System.out.println(s2.marks);
+		s2.study();
+		
+
+	}
+}

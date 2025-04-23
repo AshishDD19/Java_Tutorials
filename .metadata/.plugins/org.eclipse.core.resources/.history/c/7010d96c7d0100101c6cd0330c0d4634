@@ -1,0 +1,36 @@
+package numbers;
+
+import java.util.Scanner;
+
+public class PerfectNos {
+	
+	public static int perfectNums(int num) {
+		int sum = 0;
+		for(int i=1; i<num ;i++) {
+			if(num % i == 0) {
+				System.out.print(i+" ");
+				sum = sum +i;
+			}
+		}
+		System.out.println();
+		return sum;
+		
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner (System.in);
+		System.out.println("Enter the number: ");
+		int num = sc.nextInt();
+		System.out.println("The factors are: ");
+		int sum = perfectNums(num);
+		if(sum == num) {
+			System.out.println("It is Perfect number");
+		}
+		else {
+			System.out.println("Not a perfect number");
+		}
+
+	}
+
+}

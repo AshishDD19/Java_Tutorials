@@ -1,0 +1,13 @@
+class Test1 
+{
+	public static void main(String[] args) 
+	{
+		short i = 1;
+		while (i<=40000 )
+		{
+			System.out.println(i);
+			i++;
+		}
+		
+	}
+}

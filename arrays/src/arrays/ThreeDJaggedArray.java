@@ -1,0 +1,48 @@
+package arrays;
+import java.util.Scanner;
+class ThreeDJaggedArray 
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc = new Scanner(System.in);	
+		System.out.println("Enter no. of Schools required: ");
+		int b = sc.nextInt();
+		
+		int arr[][][] = new int[b][][];
+		
+		int r,c;
+		for (int k=0;k<b;k++){
+			System.out.println("Enter no. of Classrooms required in School "+(k+1)+": ");
+			r = sc.nextInt();
+			arr[k] = new int[r][];
+		}
+		
+		for (int k=0;k<b;k++){
+			for(int i=0;i<arr[k].length;i++){
+				System.out.println("Enter no. of Students required in School "+(k+1)+" class "+(i+1)+": ");
+				c = sc.nextInt();
+				arr[k][i] = new int[c];
+			}
+		}
+		
+		for (int k=0;k<b;k++){
+			for(int i=0; i < arr[k].length ;i++){
+				System.out.println("Enter marks of Students in School "+(k+1)+" class "+(i+1)+": ");
+				for(int j=0; j < arr[k][i].length ;j++){
+					arr[k][i][j] = sc.nextInt();
+				}
+			}
+		}
+		System.out.println("Marks of the students are: ");
+		for (int k=0;k<b;k++){
+			for(int i=0; i < arr[k].length ;i++){
+				for(int j=0; j < arr[k][i].length ;j++){
+					System.out.print(arr[k][i][j]+" ");
+				}
+				System.out.println();
+			}
+			System.out.println("-----------------------");
+		}
+		
+	}
+}

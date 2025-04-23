@@ -1,0 +1,25 @@
+package strings;
+
+public class Question1 {
+	
+	public static String revAdd(String str) {
+		String res = "";
+		for(int i= str.length()-1; i>=0;i--) {
+			res = res + (char)(str.charAt(i) + 1);
+		}
+		return res;
+		
+	}
+	
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String str = "ABDEF";
+		System.out.println(str);
+		String res = revAdd(str);
+		System.out.println(res);
+		
+		
+		
+	}
+}

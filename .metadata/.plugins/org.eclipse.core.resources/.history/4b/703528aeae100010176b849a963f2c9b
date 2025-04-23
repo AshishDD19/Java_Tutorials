@@ -1,0 +1,82 @@
+package oops;
+
+class Plane1{
+	void takeOff() {
+		System.out.println("Plane took off");
+	}
+	
+	void land() {
+		System.out.println("Plane has landed");
+	}
+	
+	void fly() {
+		System.out.println("Plane is flying");
+	}
+}
+
+class Cargo1 extends Plane1{
+	void fly() {
+		System.out.println("Cargo flying with goods");
+	}
+}
+
+class Passanger1 extends Plane1{
+	void takeOff() {
+		System.out.println("Passenger took off to 5000 feet altitude");
+	}
+	
+	void fly() {
+		System.out.println("Passenger flying with people");
+	}
+}
+
+class Fighter1 extends Plane1{
+	void takeOff() {
+		System.out.println("Fighter took off to 10000 feet altitude");
+	}
+	
+	void fly() {
+		System.out.println("Fighter flying with weapons");
+	}
+	void land() {
+		System.out.println("Fighter landing at 200 kmph");
+	}
+	
+	//Specialized class
+	void shoot() {
+		System.out.println("Fighter shooting bullets");
+	}
+}
+
+class Airport{
+	//Runtime polymorphism
+	void allowPlane(Plane1 ref) { //Up casting is done to 'ref' variable
+		ref.takeOff();
+		ref.fly();
+		ref.land();
+		
+		//calling specialized class
+		if(ref instanceof Fighter) {
+			((Fighter)(ref)).shoot();
+		}
+		
+	}
+}
+
+public class RuntimePolymorphism {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Cargo1 c = new Cargo1();
+		Passanger1 p = new Passanger1();
+		Fighter1 f = new Fighter1();
+		
+		Airport a = new Airport();
+		
+		a.allowPlane(c);
+		a.allowPlane(p);
+		a.allowPlane(f);
+
+	}
+
+}
