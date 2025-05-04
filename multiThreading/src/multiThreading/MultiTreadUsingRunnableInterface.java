@@ -3,7 +3,7 @@ package multiThreading;
 class Test6 implements Runnable{
 	public void run() {
 		for(int i=1;i<=5;i++) {
-			System.out.println("HI HELLO");
+			System.out.println(i+" "+Thread.currentThread().getName());
 			
 			try {
 				Thread.sleep(2000);
@@ -26,7 +26,7 @@ public class MultiTreadUsingRunnableInterface {
 		th.start();
 		
 		for(int i=1;i<=5;i++) {
-			System.out.println("YO!");
+			System.out.println(i+" "+Thread.currentThread().getName());
 			
 			try {
 				Thread.sleep(2000);
