@@ -4778,21 +4778,7 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.e
 !MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
 
 !ENTRY org.eclipse.core.resources 2 10035 2025-05-03 12:32:23.909
-!MESSAGE The workspace exited with unsaved changes in the previoufileHandling/src/fileHandling/BufferReaderDemo.java          org.eclipse.jdt.core.task  sourceId JDT 	charStart   Ú userEditable  charEnd   ù id  Â message TODO Auto-generated method stub priority    
-lineNumber   
-  –•±    7/fileHandling/src/fileHandling/BufferedWritterDemo.java          org.eclipse.jdt.core.task  sourceId JDT 	charStart   Ë userEditable  charEnd   ê id  Â message TODO Auto-generated method stub priority    
-lineNumber   
-  –•    D/fileHandling/src/fileHandling/CopyingContentsToAnotherFileDemo.java          org.eclipse.jdt.core.problem 	 severity    sourceId JDT 	charStart  $ charEnd  + 	arguments 	1:reading id  w message (Resource leak: 'reading' is never closed 
-lineNumber    
-categoryId   Z  –•>           	 severity    sourceId JDT 	charStart  Ž charEnd  • 	arguments 	1:writing id  w message (Resource leak: 'writing' is never closed 
-lineNumber    
-categoryId   Z  –•?       org.eclipse.jdt.core.task  sourceId JDT 	charStart   ñ userEditable  charEnd   id  Â message TODO Auto-generated method stub priority    
-lineNumber   
-  –•?    1/fileHandling/src/fileHandling/FileClassDemo.java          org.eclipse.jdt.core.task  sourceId JDT 	charStart   ± userEditable  charEnd   Ð id  Â message TODO Auto-generated method stub priority    
-lineNumber   	  –•K    7/fileHandling/src/fileHandling/FileInputStreamDemo.java          org.eclipse.jdt.core.task  sourceId JDT 	charStart   Á userEditable  charEnd   à id  Â message TODO Auto-generated method stub priority    
-lineNumber   	  –•N    7/fileHandling/src/fileHandling/FileOuputStreamDemo.java          org.eclipse.jdt.core.task  sourceId JDT 	charStart   Ã userEditable  charEnd   â id  Â message TODO Auto-generated method stub priority    
-lineNumber   	  –•U    </fileHandling/src/fileHandling/FileWritterAndReaderDemo.java          org.eclipse.jdt.core.task  sourceId JDT 	charStart   à userEditable  charEnd   ÿ id  Â message TODO Auto-generated method stub priority    
-lineNumber     –•cÀXûó#¼ QóŒ{»wÆ@±‹#¼ %–ç£“¾@±‹#¼ %–ç£“¾@±‹#¼ %–ç£“¾@±‹#¼ %–ç£“¾@±‹#¼ %–ç£“¾@±‹#¼ %–ç£“¾@±‹#¼ %–ç£“¾@±‹#¼ %–ç£“¾@±‹#¼ %–ç£“¾@±‹#¼ %–ç£“¾@±‹#¼ %–ç£“¾@±‹#¼ %–ç£“¾@±‹#¼ %–ç£“¾@±‹#¼ %–ç£“¾@±‹#¼ %–ç£“¾@±‹#¼ %–ç£“¾@±‹#¼ %–ç£“¾@±‹#¼ %–ç£“¾@±‹#¼ %–ç£“¾@±‹#¼ %–ç£“¾@±‹#¼ %–ç£“¾@±‹#¼ %–ç£“¾@±‹#¼ %–ç£“¾@±‹#¼ %–ç£“¾@±‹#¼ %–ç£“¾@±‹#¼ %–ç£“¾@±‹#¼ %–ç£“¾@±‹#¼ %–ç£“¾@±‹#¼ %–ç£“¾@±‹#¼ %–ç£“¾@±‹#¼ %–ç£“¾@±‹#¼ %–ç£“¾@±‹#¼ %–ç£“¾@±‹#¼ %–ç£“¾                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         ternal(AbstractComponentManager.java:776)
+!MESSAGE The workspace exited with unsaved changes in the previou                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                ternal(AbstractComponentManager.java:776)
 	at org.apache.felix.scr.impl.manager.DependencyManager$SingleStaticCustomizer.addedService(DependencyManager.java:1287)
 	at org.apache.felix.scr.impl.manager.DependencyManager$SingleStaticCustomizer.addedService(DependencyManager.java:1238)
 	at org.apache.felix.scr.impl.manager.ServiceTracker$Tracked.customizerAdded(ServiceTracker.java:1232)
@@ -5280,3 +5266,46 @@ import |
 		at org.eclipse.jdt.internal.ui.util.SelectionUtil.logException(SelectionUtil.java:150)
 		at org.eclipse.jdt.internal.ui.text.java.CompletionProposalComputerDescriptor.computeCompletionProposals(CompletionProposalComputerDescriptor.java:373)
 		... 12 more
+!SESSION 2025-05-04 21:28:03.194 -----------------------------------------------
+eclipse.buildId=4.34.0.20241128-0756
+java.version=23.0.2
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY ch.qos.logback.classic 1 0 2025-05-04 21:28:12.033
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY org.eclipse.core.resources 2 10035 2025-05-04 21:28:14.737
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY ch.qos.logback.classic 1 0 2025-05-04 21:28:16.775
+!MESSAGE Logback config file: D:\java-files\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.7.0.20241001-1350.xml
+
+!ENTRY org.eclipse.egit.ui 2 0 2025-05-04 21:28:38.578
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Ashish D D'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2025-05-05 10:23:43.338 -----------------------------------------------
+eclipse.buildId=4.34.0.20241128-0756
+java.version=23.0.2
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY ch.qos.logback.classic 1 0 2025-05-05 10:23:47.341
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2025-05-05 10:23:50.627
+!MESSAGE Logback config file: D:\java-files\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.7.0.20241001-1350.xml
+
+!ENTRY org.eclipse.egit.ui 2 0 2025-05-05 10:24:05.046
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Ashish D D'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.

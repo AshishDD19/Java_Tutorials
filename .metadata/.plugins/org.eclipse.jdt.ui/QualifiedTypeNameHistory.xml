@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="java.util.StringTokenizer"/>
-    <fullyQualifiedTypeName name="oops.Addition"/>
-    <fullyQualifiedTypeName name="oops.Books"/>
-    <fullyQualifiedTypeName name="oops.Student1"/>
     <fullyQualifiedTypeName name="oops.Student"/>
     <fullyQualifiedTypeName name="oops.Demo"/>
     <fullyQualifiedTypeName name="java.lang.ScopedValue"/>
@@ -19,7 +15,6 @@
     <fullyQualifiedTypeName name="oops.Passanger1"/>
     <fullyQualifiedTypeName name="oops.Fighter1"/>
     <fullyQualifiedTypeName name="oops.Airport"/>
-    <fullyQualifiedTypeName name="java.util.Arrays"/>
     <fullyQualifiedTypeName name="oops.Square"/>
     <fullyQualifiedTypeName name="oops.Rectangle"/>
     <fullyQualifiedTypeName name="oops.Circle"/>
@@ -33,7 +28,6 @@
     <fullyQualifiedTypeName name="java.lang.Exception"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="multiThreading.Task1"/>
-    <fullyQualifiedTypeName name="java.lang.Thread"/>
     <fullyQualifiedTypeName name="collections.Employee"/>
     <fullyQualifiedTypeName name="java.lang.Deprecated"/>
     <fullyQualifiedTypeName name="collections.Department"/>
@@ -48,4 +42,22 @@
     <fullyQualifiedTypeName name="java.io.IOException"/>
     <fullyQualifiedTypeName name="java.io.FileWriter"/>
     <fullyQualifiedTypeName name="java.io.BufferedWriter"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="java.util.stream.Stream"/>
+    <fullyQualifiedTypeName name="java.util.stream.Collectors"/>
+    <fullyQualifiedTypeName name="java.time.Month"/>
+    <fullyQualifiedTypeName name="java.time.LocalTime"/>
+    <fullyQualifiedTypeName name="java.time.ZonedDateTime"/>
+    <fullyQualifiedTypeName name="java.time.ZoneId"/>
+    <fullyQualifiedTypeName name="java.time.Instant"/>
+    <fullyQualifiedTypeName name="java.time.Duration"/>
+    <fullyQualifiedTypeName name="java.time.temporal.ChronoUnit"/>
+    <fullyQualifiedTypeName name="java.lang.Thread"/>
+    <fullyQualifiedTypeName name="java.time.Period"/>
+    <fullyQualifiedTypeName name="javax.management.openmbean.OpenMBeanAttributeInfoSupport"/>
+    <fullyQualifiedTypeName name="javax.management.openmbean.OpenMBeanAttributeInfo"/>
+    <fullyQualifiedTypeName name="java.time.format.DateTimeFormatter"/>
+    <fullyQualifiedTypeName name="java.time.LocalDate"/>
+    <fullyQualifiedTypeName name="java.util.Optional"/>
 </qualifiedTypeNameHistroy>
