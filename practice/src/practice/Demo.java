@@ -1,32 +1,51 @@
 package practice;
 
-import java.time.Duration;
-import java.time.Instant;
+import java.util.Arrays;
 
 public class Demo {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		Instant start  = Instant.now();
+	public static String rev(String str) {
+		String res = "";
+		for(int i = str.length()-1;i>=0;i--) {
+			res += str.charAt(i);
+		}
+		
+		return res;
+	}
 	
-		int rows = 7;
-		for(int i=1;i<=rows;i++) {
-			for(int j=1;j<=rows;j++) {
-				if(i == 1 || i == rows || j==1 || j == rows|| i==j || i+j == rows+1 || i == (rows+1)/2 ) {
-					System.out.print("*"+" ");
-				}else {
-					System.out.print(" "+" ");
+	public static String palliLong(String str) {
+		
+		String longStr = "";
+		for(int i=0;i<str.length();i++) {
+			for(int j=i;j<str.length();j++) {
+				String res = str.substring(i, j+1);
+				if(res.equals(rev(res))) {
+					if(res.length() > longStr.length()) {
+						longStr = res;
+					}
+					System.out.println(res);
 				}
 				
-				
 			}
-			System.out.println();
 		}
-
+		return longStr;
+	}
+	
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
 		
-		Instant end  = Instant.now();
-		Duration d = Duration.between(start, end);
-		System.out.println(d);
+		String str = "malayalamu";
+		System.out.println(palliLong(str));
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		
 	}
 

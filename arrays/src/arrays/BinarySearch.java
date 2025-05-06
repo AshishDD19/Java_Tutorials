@@ -31,7 +31,7 @@ public class BinarySearch {
 		System.out.println("Enter the key value to search: ");
 		int key = sc.nextInt();
 		int idx = binarySearch(arr, key);
-		
+		System.out.println(idx);
 		if(idx > -1) {
 			System.out.println("Element is in "+idx+" index position.");
 		}
