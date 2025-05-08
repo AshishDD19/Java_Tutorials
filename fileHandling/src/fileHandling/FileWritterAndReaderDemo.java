@@ -38,6 +38,7 @@ public class FileWritterAndReaderDemo {
 				while(reader.hasNextLine()) {
 					String data = reader.nextLine();
 					System.out.print(data);
+					System.out.println();
 				}
 			}
 			finally {

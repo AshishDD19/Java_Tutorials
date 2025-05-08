@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="oops.Student"/>
-    <fullyQualifiedTypeName name="oops.Demo"/>
     <fullyQualifiedTypeName name="java.lang.ScopedValue"/>
     <fullyQualifiedTypeName name="oops.Loan"/>
     <fullyQualifiedTypeName name="sortingAlgo.Merge2SortedArrayInDescending"/>
-    <fullyQualifiedTypeName name="java.util.HashMap"/>
     <fullyQualifiedTypeName name="oops.A"/>
     <fullyQualifiedTypeName name="oops.LivingRoom"/>
     <fullyQualifiedTypeName name="oops.Cargo"/>
@@ -31,7 +28,6 @@
     <fullyQualifiedTypeName name="collections.Employee"/>
     <fullyQualifiedTypeName name="java.lang.Deprecated"/>
     <fullyQualifiedTypeName name="collections.Department"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="java.util.LinkedList"/>
     <fullyQualifiedTypeName name="multiThreading.SharedData"/>
     <fullyQualifiedTypeName name="multiThreading.Producer"/>
@@ -42,16 +38,12 @@
     <fullyQualifiedTypeName name="java.io.IOException"/>
     <fullyQualifiedTypeName name="java.io.FileWriter"/>
     <fullyQualifiedTypeName name="java.io.BufferedWriter"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
-    <fullyQualifiedTypeName name="java.util.Arrays"/>
     <fullyQualifiedTypeName name="java.util.stream.Stream"/>
     <fullyQualifiedTypeName name="java.util.stream.Collectors"/>
     <fullyQualifiedTypeName name="java.time.Month"/>
     <fullyQualifiedTypeName name="java.time.LocalTime"/>
     <fullyQualifiedTypeName name="java.time.ZonedDateTime"/>
     <fullyQualifiedTypeName name="java.time.ZoneId"/>
-    <fullyQualifiedTypeName name="java.time.Instant"/>
-    <fullyQualifiedTypeName name="java.time.Duration"/>
     <fullyQualifiedTypeName name="java.time.temporal.ChronoUnit"/>
     <fullyQualifiedTypeName name="java.lang.Thread"/>
     <fullyQualifiedTypeName name="java.time.Period"/>
@@ -60,4 +52,12 @@
     <fullyQualifiedTypeName name="java.time.format.DateTimeFormatter"/>
     <fullyQualifiedTypeName name="java.time.LocalDate"/>
     <fullyQualifiedTypeName name="java.util.Optional"/>
+    <fullyQualifiedTypeName name="java.time.Instant"/>
+    <fullyQualifiedTypeName name="java.time.Duration"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="java.util.Map"/>
+    <fullyQualifiedTypeName name="java.util.HashMap"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
 </qualifiedTypeNameHistroy>

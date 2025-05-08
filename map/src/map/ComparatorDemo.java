@@ -3,7 +3,9 @@ package map;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 class Student1 implements Comparator<Student1>{
 	String name;
@@ -33,7 +35,7 @@ class Student1 implements Comparator<Student1>{
 //			return 1;
 //		}
 		return o2.percent - o1.percent ;
-	}
+	} 
 	
 }
 public class ComparatorDemo {
