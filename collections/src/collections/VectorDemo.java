@@ -24,28 +24,30 @@ public class VectorDemo {
 				System.out.println("Capacity:"+a1.capacity());
 				System.out.println(a1);
 				
-				Vector a2 = new Vector(4,6);
+				Vector a2 = new Vector(5,6);
 				a2.add(11);
 				a2.add(12);
 				a2.add(13);
 				a2.add(14);
-				
+				a2.add(34);
 				System.out.println("Size: "+a2.size());
 				System.out.println("Capacity:"+a2.capacity());
 				
 				System.out.println();
 				a2.add(17);
-				System.out.println("Size: "+a2.size());
-				System.out.println("Capacity:"+a2.capacity());
-				System.out.println(a2);
+
 				
 				a2.remove(2);
-				System.out.println("Size: "+a2.size());
-				System.out.println("Capacity:"+a2.capacity());
-				System.out.println(a2);
+
 				
 				a1.addAll(3, a2);
 				System.out.println(a1);
-	}
+				
+				System.out.println(a1.elementAt(4));
+				
+				
+				Vector cloneA1 = (Vector) a1.clone();
+				System.out.println(cloneA1);
+			}
 
 }

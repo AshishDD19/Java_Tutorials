@@ -1,0 +1,913 @@
+1. Write a program to check if a number is prime.
+
+public class PrimeCheck {
+	public static boolean isPrime(int n) {
+		if (n <= 1)
+			return false;
+		for (int i = 2; i <= Math.sqrt(n); i++) {
+			if (n % i == 0)
+				return false;
+		}
+		return true;
+	}
+
+	public static void main(String[] args) {
+		System.out.println(isPrime(17)); // true
+	}
+}
+-----------------------------------------------------------------
+
+2. Write a program to find the factorial of a number using recursion.
+
+public class Factorial {
+	public static int factorial(int n) {
+		if (n == 0)
+			return 1;
+		return n * factorial(n - 1);
+	}
+
+	public static void main(String[] args) {
+		System.out.println(factorial(5)); // 120
+	}
+}
+
+----------------------------------------------------------------
+
+3. Write a program to reverse a string.
+
+public class ReverseString {
+	public static String reverse(String str) {
+		return new StringBuilder(str).reverse().toString();
+	}
+
+	public static void main(String[] args) {
+		System.out.println(reverse("hello")); // olleh
+	}
+}
+
+------------------------------------------------------------------
+
+4. Write a program to find max from the array.
+
+public class MaxInArray {
+	public static int findMax(int[] arr) {
+		int max = arr[0];
+		for (int i = 1; i < arr.length; i++) {
+			if (arr[i] > max)
+				max = arr[i];
+		}
+		return max;
+	}
+
+	public static void main(String[] args) {
+		int[] arr = { 3, 5, 7, 2, 8 };
+		System.out.println(findMax(arr)); // 8
+
+	}
+}
+
+
+----------------------------------------------------------------
+
+5. Write a program to find min from the given array.
+
+public class MinInArray {
+	public static int findMin(int[] arr) {
+		int min = arr[0];
+		for (int i = 1; i < arr.length; i++) {
+			if (arr[i] < min)
+				min = arr[i];
+		}
+		return min;
+	}
+
+	public static void main(String[] args) {
+	    int[] arr = {3, 5, 7, 2, 8};
+	    System.out.println(findMin(arr)); // 2
+	}
+}
+
+-------------------------------------------------------------
+
+6. bubbleSort
+
+public static void bubbleSort(int[] arr) {
+    int n = arr.length;
+    for (int i = 0; i < n - 1; i++) {
+        for (int j = 0; j < n - i - 1; j++) {
+            if (arr[j] > arr[j + 1]) {
+                int temp = arr[j];
+                arr[j] = arr[j + 1];
+                arr[j + 1] = temp;
+            }
+        }
+    }
+}
+public static void main(String[] args) {
+    int[] arr = {5, 2, 9, 1};
+    bubbleSort(arr);
+    for (int i : arr) System.out.print(i + " ");
+
+--------------------------------------------------------------
+
+7. VowelConsonantCount 
+
+public class VowelConsonantCount {  
+    public static void count(String str) {
+        int vowels = 0, consonants = 0;
+        str = str.toLowerCase();
+        for (char ch : str.toCharArray()) {
+            if (Character.isLetter(ch)) {
+                if ("aeiou".indexOf(ch) != -1) vowels++;
+                else consonants++;
+            }
+        }
+        System.out.println("Vowels: " + vowels + ", Consonants: " + consonants);
+    }
+    public static void main(String[] args) {
+        count("Hello World");
+    }
+}
+
+-------------------------------------------------------------------
+
+8. WordCount 
+
+public class WordCount {
+    public static int countWords(String str) {
+        if (str == null || str.trim().isEmpty()) return 0;
+        return str.trim().split("\\s+").length;
+    }
+    public static void main(String[] args) {
+        System.out.println(countWords("Java is awesome")); // 3
+    }
+}
+
+----------------------------------------------------------------------
+
+9. SwapNumbers 
+
+public class SwapNumbers {
+    public static void main(String[] args) {
+        int a = 5, b = 10;
+        a = a + b;
+        b = a - b;
+        a = a - b;
+        System.out.println("a: " + a + ", b: " + b); // a: 10, b: 5
+    }
+}
+
+----------------------------------------------------------------
+
+10. Armstrong 
+
+public class Armstrong {
+    public static boolean isArmstrong(int n) {
+        int sum = 0, temp = n;
+        while (n > 0) {
+            int digit = n % 10;
+            sum += digit * digit * digit;
+            n /= 10;
+        }
+        return sum == temp;
+    }
+    public static void main(String[] args) {
+        System.out.println(isArmstrong(153)); // true
+    }
+}
+
+--------------------------------------------------------------------
+
+11. GCD 
+
+public class GCD {
+    public static int gcd(int a, int b) {
+        while (b != 0) {
+            int temp = b;
+            b = a % b;
+            a = temp;
+        }
+        return a;
+    }
+    public static void main(String[] args) {
+        System.out.println(gcd(54, 24)); // 6
+    }
+}
+
+-------------------------------------------------------------------
+
+12. LCM 
+
+public class LCM {
+    public static int lcm(int a, int b) {
+        return a * b / gcd(a, b);
+    }
+    public static int gcd(int a, int b) {
+        while (b != 0) {
+            int temp = b;
+            b = a % b;
+            a = temp;
+        }
+        return a;
+    }
+    public static void main(String[] args) {
+        System.out.println(lcm(4, 5)); // 20
+    }
+}
+
+---------------------------------------------------------------------
+
+13. CountDigits 
+
+public class CountDigits {
+    public static int countDigits(int num) {
+        int count = 0;
+        while (num != 0) {
+            num /= 10;
+            count++;
+        }
+        return count;
+    }
+    public static void main(String[] args) {
+        System.out.println(countDigits(12345)); // 5
+    }
+}
+
+--------------------------------------------------------------------
+
+14. ReverseNumber 
+
+public class ReverseNumber {
+    public static int reverse(int num) {
+        int rev = 0;
+        while (num != 0) {
+            rev = rev * 10 + num % 10;
+            num /= 10;
+        }
+        return rev;
+    }
+    public static void main(String[] args) {
+        System.out.println(reverse(1234)); // 4321
+    }
+}
+
+-----------------------------------------------------------------------
+
+15. SumOfDigits 
+
+public class SumOfDigits {
+    public static int sumDigits(int num) {
+        int sum = 0;
+        while (num != 0) {
+            sum += num % 10;
+            num /= 10;
+        }
+        return sum;
+    }
+    public static void main(String[] args) {
+        System.out.println(sumDigits(1234)); // 10
+	}
+}
+
+-----------------------------------------------------------------------
+
+
+16. PalindromeNumber 
+
+public class PalindromeNumber {
+    public static boolean isPalindrome(int num) {
+        int rev = 0, original = num;
+        while (num != 0) {
+            rev = rev * 10 + num % 10;
+            num /= 10;
+        }
+        return rev == original;
+    }
+    public static void main(String[] args) {
+        System.out.println(isPalindrome(121)); // true
+	}
+}
+
+----------------------------------------------------------------------
+17. LeapYear 
+
+public class LeapYear {
+    public static boolean isLeap(int year) {
+        return (year % 4 == 0 && year % 100 != 0) || (year % 400 == 0);
+    }
+    public static void main(String[] args) {
+        System.out.println(isLeap(2024)); // true
+	}
+}
+
+----------------------------------------------------------------------
+
+18. BinaryToDecimal 
+
+public class BinaryToDecimal {
+    public static int binaryToDecimal(String binary) {
+        return Integer.parseInt(binary, 2);
+    }
+    public static void main(String[] args) {
+        System.out.println(binaryToDecimal("1010")); // 10
+    }
+}
+------------------------------------------------------------------------
+
+19.DecimalToBinary 
+
+public class DecimalToBinary {
+    public static String toBinary(int n) {
+        return Integer.toBinaryString(n);
+    }
+    public static void main(String[] args) {
+        System.out.println(toBinary(10)); // 1010
+    }
+}
+
+---------------------------------------------------------------------------
+
+20. FindDuplicates 
+
+public class FindDuplicates {
+	public static void find(int[] arr) {
+		Set<Integer> seen = new HashSet<>();
+		Set<Integer> duplicates = new HashSet<>();
+		for (int num : arr) {
+			if (!seen.add(num))
+				duplicates.add(num);
+		}
+		System.out.println(duplicates);
+	}
+
+	public static void main(String[] args) {
+        find(new int[]{1, 2, 3, 2, 3, 4});
+	}
+}
+-------------------------------------------------------------------------
+
+21. FrequencyCount 
+
+import java.util.*;
+
+public class FrequencyCount {
+    public static void count(int[] arr) {
+        Map<Integer, Integer> freq = new HashMap<>();
+        for (int num : arr) {
+            freq.put(num, freq.getOrDefault(num, 0) + 1);
+        }
+        System.out.println(freq);
+    }
+    public static void main(String[] args) {
+        count(new int[]{1, 2, 2, 3, 3, 3});
+    }
+}
+
+---------------------------------------------------------------------------
+
+22. MergeSortedArrays 
+
+import java.util.*;
+
+public class MergeSortedArrays {
+    public static int[] merge(int[] a, int[] b) {
+        int[] result = new int[a.length + b.length];
+        int i = 0, j = 0, k = 0;
+        while (i < a.length && j < b.length) {
+            if (a[i] < b[j]) result[k++] = a[i++];
+            else result[k++] = b[j++];
+        }
+        while (i < a.length) result[k++] = a[i++];
+        while (j < b.length) result[k++] = b[j++];
+        return result;
+    }
+    public static void main(String[] args) {
+        int[] merged = merge(new int[]{1, 3, 5}, new int[]{2, 4, 6});
+        System.out.println(Arrays.toString(merged));
+    }
+}
+
+-------------------------------------------------------------------------------
+
+23. RemoveDuplicates 
+
+import java.util.*;
+
+public class RemoveDuplicates {
+    public static int[] remove(int[] arr) {
+        Set<Integer> set = new LinkedHashSet<>();
+        for (int num : arr) set.add(num);
+        return set.stream().mapToInt(Integer::intValue).toArray();
+    }
+    public static void main(String[] args) {
+        System.out.println(Arrays.toString(remove(new int[]{1, 2, 2, 3, 4, 4})));
+    }
+}
+
+--------------------------------------------------------------------------------
+
+24. LinearSearch 
+
+public class LinearSearch {
+    public static int search(int[] arr, int key) {
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] == key) return i;
+        }
+        return -1;
+    }
+    public static void main(String[] args) {
+        System.out.println(search(new int[]{1, 2, 3}, 2)); // 1
+    }
+}
+
+----------------------------------------------------------------------------
+
+25. BinarySearch 
+
+public class BinarySearch {
+    public static int binarySearch(int[] arr, int key) {
+        int l = 0, r = arr.length - 1;
+        while (l <= r) {
+            int mid = (l + r) / 2;
+            if (arr[mid] == key) return mid;
+            if (arr[mid] < key) l = mid + 1;
+            else r = mid - 1;
+        }
+        return -1;
+    }
+    public static void main(String[] args) {
+        System.out.println(binarySearch(new int[]{1, 2, 3, 4, 5}, 4)); // 3
+    }
+}
+
+---------------------------------------------------------------------------
+
+26. RemoveElement 
+
+import java.util.*;
+
+public class RemoveElement {
+    public static int[] removeElement(int[] arr, int key) {
+        return Arrays.stream(arr).filter(i -> i != key).toArray();
+    }
+    public static void main(String[] args) {
+        System.out.println(Arrays.toString(removeElement(new int[]{1, 2, 3, 2}, 2))); // [1, 3]
+    }
+}
+
+
+---------------------------------------------------------------------------
+
+27. MissingNumber
+
+public class MissingNumber {
+	public static int findMissing(int[] arr, int n) {
+		int total = n * (n + 1) / 2;
+		int sum = 0;
+		for (int i : arr)
+			sum += i;
+		return total - sum;
+	}
+
+	public static void main(String[] args) {
+		System.out.println(findMissing(new int[] { 1, 2, 4, 5 }, 5)); // 3
+	}
+}
+
+---------------------------------------------------------------------------------
+
+28. AnagramCheck
+
+import java.util.*;
+
+public class AnagramCheck {
+    public static boolean isAnagram(String s1, String s2) {
+        char[] a1 = s1.toCharArray();
+        char[] a2 = s2.toCharArray();
+        Arrays.sort(a1);
+        Arrays.sort(a2);
+        return Arrays.equals(a1, a2);
+    }
+    public static void main(String[] args) {
+        System.out.println(isAnagram("listen", "silent")); // true
+    }
+}
+
+---------------------------------------------------------------------------------
+
+29. FirstNonRepeatedChar
+
+import java.util.*;
+
+public class FirstNonRepeatedChar {
+    public static char firstNonRepeated(String str) {
+        Map<Character, Integer> countMap = new LinkedHashMap<>();
+        for (char ch : str.toCharArray()) {
+            countMap.put(ch, countMap.getOrDefault(ch, 0) + 1);
+        }
+        for (Map.Entry<Character, Integer> entry : countMap.entrySet()) {
+            if (entry.getValue() == 1) return entry.getKey();
+        }
+        return '\0'; // no non-repeated char
+    }
+    public static void main(String[] args) {
+        System.out.println(firstNonRepeated("swiss")); // w
+    }
+}
+
+----------------------------------------------------------------------------------
+
+30. ReverseString
+
+public class ReverseString {
+	public static String reverse(String str) {
+		return new StringBuilder(str).reverse().toString();
+	}
+
+	public static void main(String[] args) {
+		System.out.println(reverse("hello")); // olleh
+	}
+}
+
+-----------------------------------------------------------------------------------
+
+31. PalindromeString
+
+public class PalindromeString {
+	public static boolean isPalindrome(String str) {
+		String rev = new StringBuilder(str).reverse().toString();
+		return str.equals(rev);
+	}
+
+	public static void main(String[] args) {
+		System.out.println(isPalindrome("madam")); // true
+	}
+}
+
+---------------------------------------------------------------------------------
+
+32. RemoveWhitespace
+
+public class RemoveWhitespace {
+	public static String removeSpaces(String str) {
+		return str.replaceAll("\\s", "");
+	}
+
+	public static void main(String[] args) {
+		System.out.println(removeSpaces("J a v a ")); // Java
+	}
+}
+
+------------------------------------------------------------------------------
+
+33. LargestSmallestWord
+
+public class LargestSmallestWord {
+	public static void findWords(String sentence) {
+		String[] words = sentence.split("\\s+");
+		String largest = words[0], smallest = words[0];
+		for (String word : words) {
+			if (word.length() > largest.length())
+				largest = word;
+			if (word.length() < smallest.length())
+				smallest = word;
+		}
+		System.out.println("Largest: " + largest + ", Smallest: " + smallest);
+	}
+
+	public static void main(String[] args) {
+        findWords("Java programming language is awesome");
+	}
+}
+
+-------------------------------------------------------------------------------------------
+
+34.  CharOccurrences
+
+import java.util.*;
+
+
+public class CharOccurrences {
+    public static int countChar(String str, char c) {
+        int count = 0;
+        for (char ch : str.toCharArray()) {
+            if (ch == c) count++;
+        }
+        return count;
+    }
+    public static void main(String[] args) {
+        System.out.println(countChar("hello world", 'l')); // 3
+    }
+}
+
+-------------------------------------------------------------------------------------------
+
+35. SortStringChars
+
+import java.util.*;
+
+public class SortStringChars {
+    public static String sortChars(String str) {
+        char[] chars = str.toCharArray();
+        Arrays.sort(chars);
+        return new String(chars);
+    }
+    public static void main(String[] args) {
+        System.out.println(sortChars("dcba")); // abcd
+    }
+}
+
+-------------------------------------------------------------------------------------------
+
+36. OnlyDigits
+
+public class OnlyDigits {
+	public static boolean isNumeric(String str) {
+		return str.matches("\\d+");
+	}
+
+	public static void main(String[] args) {
+		System.out.println(isNumeric("12345")); // true
+		System.out.println(isNumeric("12a45")); // false
+	}
+}
+
+
+-----------------------------------------------------------------------------------------
+
+37. StringPermutations
+
+public class StringPermutations {
+	public static void permute(String str, String ans) {
+		if (str.length() == 0)
+			System.out.println(ans);
+		for (int i = 0; i < str.length(); i++) {
+			permute(str.substring(0, i) + str.substring(i + 1), ans + str.charAt(i));
+		}
+	}
+
+	public static void main(String[] args) {
+		permute("ABC", "");
+	}
+}
+
+----------------------------------------------------------------------------------------------
+
+38. StringRotation
+
+public class StringRotation {
+	public static boolean areRotations(String s1, String s2) {
+		return (s1.length() == s2.length()) && ((s1 + s1).contains(s2));
+	}
+
+	public static void main(String[] args) {
+        System.out.println(areRotations("ABCD", "CDAB")); // true
+        System.out.println(areRotations("ABCD", "ACBD")); // false
+	}
+}
+
+--------------------------------------------------------------------------------------------------
+39. SecondLargest
+
+
+public class SecondLargest {
+    public static int secondLargest(int[] arr) {
+        int largest = Integer.MIN_VALUE, second = Integer.MIN_VALUE;
+        for (int num : arr) {
+            if (num > largest) {
+                second = largest;
+                largest = num;
+            } else if (num > second && num != largest) {
+                second = num;
+            }
+        }
+        return second;
+    }
+    public static void main(String[] args) {
+        System.out.println(secondLargest(new int[]{10, 5, 20, 8})); // 10
+    }
+}
+
+----------------------------------------------------------------------------------------------------
+
+40. PrimeCheck
+
+
+public class PrimeCheck {
+    public static boolean isPrime(int n) {
+        if (n <= 1) return false;
+        for (int i = 2; i <= Math.sqrt(n); i++) {
+            if (n % i == 0) return false;
+        }
+        return true;
+    }
+    public static void main(String[] args) {
+        System.out.println(isPrime(17)); // true
+        System.out.println(isPrime(18)); // false
+
+	}
+}
+
+---------------------------------------------------------------------------------------------------
+
+41. Fibonacci 
+
+public class Fibonacci {
+    public static void printFibo(int n) {
+        int a = 0, b = 1;
+        for (int i = 0; i < n; i++) {
+            System.out.print(a + " ");
+            int c = a + b;
+            a = b;
+            b = c;
+        }
+    }
+    public static void main(String[] args) {
+        printFibo(7); // 0 1 1 2 3 5 8
+	}
+}
+
+-------------------------------------------------------------------------------
+
+42. Factorial
+
+public class Factorial {
+    public static long factorial(int n) {
+        long fact = 1;
+        for (int i = 2; i <= n; i++) fact *= i;
+        return fact;
+    }
+    public static void main(String[] args) {
+        System.out.println(factorial(5)); // 120
+
+-------------------------------------------------------------------
+
+43. FactorialRecursive
+
+public class FactorialRecursive {
+    public static long factorial(int n) {
+        if (n <= 1) return 1;
+        return n * factorial(n - 1);
+    }
+    public static void main(String[] args) {
+        System.out.println(factorial(5)); // 120
+    }
+}
+
+------------------------------------------------------------------
+
+44. VowelCount 
+
+public class VowelCount {
+    public static int countVowels(String str) {
+        int count = 0;
+        for (char ch : str.toLowerCase().toCharArray()) {
+            if ("aeiou".indexOf(ch) != -1) count++;
+        }
+        return count;
+    }
+    public static void main(String[] args) {
+        System.out.println(countVowels("hello world")); // 3
+}
+
+------------------------------------------------------------------
+
+45. IsSorted
+
+public class IsSorted {
+    public static boolean isSorted(int[] arr) {
+        for (int i = 1; i < arr.length; i++) {
+            if (arr[i] < arr[i - 1]) return false;
+        }
+        return true;
+    }
+    public static void main(String[] args) {
+        System.out.println(isSorted(new int[]{1, 2, 3, 4})); // true
+        System.out.println(isSorted(new int[]{4, 3, 2, 1})); // false
+    }
+}
+
+-------------------------------------------------------------------------
+
+46. SumArray
+
+public class SumArray {
+    public static int sum(int[] arr) {
+        int s = 0;
+        for (int num : arr) s += num;
+        return s;
+    }
+    public static void main(String[] args) {
+        System.out.println(sum(new int[]{1, 2, 3, 4})); // 10
+    }
+}
+
+----------------------------------------------------------------------------
+47. MaxDifference
+
+public class MaxDifference {
+    public static int maxDiff(int[] arr) {
+        int min = arr[0], maxDiff = arr[1] - arr[0];
+        for (int i = 1; i < arr.length; i++) {
+            if (arr[i] - min > maxDiff) maxDiff = arr[i] - min;
+            if (arr[i] < min) min = arr[i];
+        }
+        return maxDiff;
+    }
+    public static void main(String[] args) {
+        System.out.println(maxDiff(new int[]{2, 3, 10, 6, 4, 8, 1})); // 8
+    }
+}
+
+---------------------------------------------------------------------------------
+
+48. CommonElements
+
+import java.util.*;
+
+public class CommonElements {
+    public static Set<Integer> common(int[] a, int[] b) {
+        Set<Integer> setA = new HashSet<>();
+        Set<Integer> result = new HashSet<>();
+        for (int num : a) setA.add(num);
+        for (int num : b) {
+            if (setA.contains(num)) result.add(num);
+        }
+        return result;
+    }
+    public static void main(String[] args) {
+        System.out.println(common(new int[]{1, 2, 3}, new int[]{2, 3, 4})); // [2, 3]
+    }
+}
+
+
+-----------------------------------------------------------------------------
+
+49. rotate Array
+
+public class Day3 {
+	
+	public static void rot_anti(int [] arr) {
+		int temp = arr[0];
+		for(int i=1; i<=arr.length-1; i++) {
+			arr[i-1] = arr[i];
+		}
+		arr[arr.length-1] = temp;
+		
+	}
+	
+	
+	public static void rot_clock(int [] arr) {
+		int temp = arr[arr.length-1];
+		for(int i=arr.length-2; i>=0; i--) {
+			arr[i+1] = arr[i];
+		}
+		arr[0] = temp;
+	}
+
+	public static void main(String[] args) {
+		int [] arr = {1,2,3,4,5};
+		for(int i=1; i<=288%arr.length; i++) {
+			rot_anti(arr);
+		}
+//		for(int i=1; i<=400%arr.length; i++) {
+//			rot_clock(arr);
+//		}
+		System.out.println(Arrays.toString(arr));
+	}
+
+}
+
+-------------------------------------------------------------------------
+
+50. Longest palindromic substring
+
+public class Day4 {
+	
+	public static String rev(String s) {
+		String res = "";
+		for(int i=s.length()-1; i>=0; i--) {
+			res = res + s.charAt(i);
+		}
+		return res;
+	}
+
+	public static void main(String[] args) {
+		String s = "hello";
+		String l_str = ""; //ll
+		for(int i=0; i<s.length();i++) {
+			for(int j=i;j<s.length(); j++) {
+				String temp = s.substring(i, j+1);
+				String res = rev(temp);
+				if(temp.equals(res)) {
+					if(res.length()>l_str.length()) {
+						l_str = res;
+					}
+				}
+			}
+		}
+		System.out.println(l_str);
+		
+	}
+
+}

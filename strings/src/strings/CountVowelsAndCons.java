@@ -2,6 +2,25 @@ package strings;
 
 public class CountVowelsAndCons {
 
+	public static void countVandC(String str){
+		str = str.toLowerCase();
+		int vowels = 0;
+		int cons = 0;
+		for(char ch : str.toCharArray()) {
+			if(Character.isLetter(ch)) {
+				if("aeiou".indexOf(ch) != -1) {
+					vowels++;
+				}
+				else {
+					cons++;
+				}
+			}
+		}
+		System.out.println("Vowels :"+vowels);
+		System.out.println("Consonents: "+cons);
+	}
+	
+	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		String str  = "pentagon space ";
@@ -26,6 +45,8 @@ public class CountVowelsAndCons {
 		System.out.println("Vowels count is :"+vowels);
 		System.out.println("Consonents count is :"+cons);
 		System.out.println("Space count is :"+space);
+		
+		countVandC(str);
 	}
 
 }

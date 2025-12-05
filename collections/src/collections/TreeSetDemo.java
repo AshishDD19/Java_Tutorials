@@ -20,11 +20,15 @@ public class TreeSetDemo {
 		System.out.println("First element: "+tr.first());
 		System.out.println("Last element: "+tr.last());
 		
-		int n = 33;
-		System.out.println("Higher than "+n+": "+tr.higher(n));
-		System.out.println("Lower than "+n+": "+tr.lower(n));
+		int n = 45;
+		System.out.println("Higher than (>) "+n+": "+tr.higher(n));
+		System.out.println("Lower than (<) "+n+": "+tr.lower(n));
 		
-		System.out.println("Floor value to "+n+" is: "+tr.floor(n));
+		System.out.println("Floor value(<=) to "+33+" is: "+tr.floor(33));
+		System.out.println("celing value(>=) to "+33+" is: "+tr.ceiling(33));
+		
+		System.out.println("Elements less than "+n+": "+tr.headSet(n));
+		System.out.println("Elements greater than or equal "+n+": "+tr.tailSet(n));
 		
 		
 		
@@ -40,11 +44,7 @@ public class TreeSetDemo {
 		
 		
 		
-//		
-//		tr.addFirst(11);
-//		tr.addLast(66);
-//		
-		System.out.println(tr);
+
 		
 		
 	}

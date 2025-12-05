@@ -21,7 +21,7 @@ public class CollectionsDemo {
 		System.out.println(a2);
 		
 		a2.remove("Hi");
-		System.out.println(a2);
+		System.out.println(a2.size());
 		
 		a1.addAll(a2);
 		System.out.println(a1);
@@ -39,6 +39,13 @@ public class CollectionsDemo {
 		
 		a1.retainAll(a2);
 		System.out.println(a1);
+		Object[] arr = a1.toArray();
+		
+		System.out.println(Arrays.toString(arr));
+		
+
+		
+ 		
 		
 	}
 

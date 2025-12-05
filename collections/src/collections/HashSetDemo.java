@@ -25,6 +25,24 @@ public class HashSetDemo {
 		System.out.println("Cloned copy: "+h1);
 		
 		HashSet h2 = new HashSet(4,2);
+
+		
+		h2.add("hi");
+		h2.add("hello");
+		h2.add("welcome");
+		
+		h1.addAll(h2);
+		System.out.println(h1);
+		
+		h1.remove(12);
+		System.out.println(h1.contains(11));
+		System.out.println(h1.containsAll(h2));
+		
+		
+		h1.retainAll(h2);
+		System.out.println(h1);
+		
+		
 		
 		
 		

@@ -1,6 +1,8 @@
 package collections;
 
+
 import java.util.Stack;
+
 
 public class StackDemo {
 
@@ -22,7 +24,7 @@ public class StackDemo {
 		System.out.println(s);
 		System.out.println("top element: "+s.peek());
 		
-		System.out.println(s.search(11));
+		System.out.println(s.search(33));
 		
 		System.out.println("Size: "+s.size());
 		System.out.println("Capacity: "+s.capacity());

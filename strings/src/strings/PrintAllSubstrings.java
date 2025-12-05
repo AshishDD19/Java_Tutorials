@@ -20,7 +20,7 @@ public class PrintAllSubstrings {
 			for(int j=i ;j<str.length();j++) {
 				res += str.charAt(j);
 				System.out.println(res);
-			}
+			} 
 		}
 			
 	}

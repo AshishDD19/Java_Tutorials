@@ -9,6 +9,11 @@ public class CheckAnagram1 {
 		String s1 = "Listen";
 		String s2 = "Silent";
 		
+	
+		
+		
+		
+		
 		String s3 = s1.toLowerCase();
 		String s4 = s2.toLowerCase();
 		
