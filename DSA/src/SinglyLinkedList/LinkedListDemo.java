@@ -227,6 +227,32 @@ class LinkedList {
 		
 	}
 	
+	
+	public void reverseNew() {
+		
+		Node prev = null;
+		Node next = null;
+		Node curr = head;
+		
+		while(curr != null) {
+			next = curr.next;
+			curr.next = prev;
+			
+			prev = curr;
+			curr = next;
+		}
+		
+		rev = prev;
+		
+		while(prev != null) {
+			System.out.print(prev.data+"->");
+			prev = prev.next;
+		}
+		System.out.println();
+		
+		
+	}
+	
 	public boolean isPallindrome() {
 		Node curr = head;
 		Node revcurr = rev;
@@ -255,7 +281,7 @@ public class LinkedListDemo {
 		ll.add_last(20);
 		ll.add_last(30);
 		ll.add_last(20);
-		ll.add_last(10);
+//		ll.add_last(10);
 		ll.print();
 
 //		System.out.println();
@@ -296,7 +322,10 @@ public class LinkedListDemo {
 //		ll.print();
 		
 		System.out.println();
-		ll.reverse();
+		System.out.println("Reverdes LL");
+//		ll.reverse();
+		
+		ll.reverseNew();
 		
 		if(ll.isPallindrome()) {
 			System.out.println("Pallindrome");
